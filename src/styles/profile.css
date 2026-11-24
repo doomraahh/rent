@@ -1,0 +1,47 @@
+.auth-panel {
+  width: 100%;
+  max-width: 720px;
+  margin: 8px auto;
+  padding: 32px;
+}
+.auth-panel__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 24px 0 20px;
+}
+.auth-panel__switch {
+  font-size: 14px;
+}
+.auth-panel__link {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.profile-details {
+  display: grid;
+  gap: 20px;
+  margin: 24px 0;
+}
+.profile-details dt {
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-size: 13px;
+}
+.profile-details dd {
+  margin: 0;
+  font-size: 16px;
+  overflow-wrap: anywhere;
+}
+.profile-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+@media (max-width: 640px) {
+  .auth-panel {
+    padding: 24px 20px;
+  }
+  .profile-actions {
+    flex-direction: column;
+  }
+}

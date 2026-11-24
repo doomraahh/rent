@@ -1,0 +1,71 @@
+.admin-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin-bottom: 24px;
+}
+.admin-stats__item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px;
+}
+.admin-stats__label {
+  color: var(--muted);
+  font-size: 13px;
+}
+.admin-stats__value {
+  font-size: 28px;
+  font-weight: 500;
+  overflow-wrap: anywhere;
+  font-variant-numeric: tabular-nums;
+}
+.admin-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.admin-search {
+  max-width: 520px;
+  margin-bottom: 24px;
+}
+.user-list {
+  display: grid;
+  gap: 16px;
+}
+.user-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 24px;
+}
+.user-card > div {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.user-card__role {
+  min-width: 200px;
+}
+@media (max-width: 640px) {
+  .admin-stats {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .admin-stats__item,
+  .user-card {
+    padding: 20px;
+  }
+  .user-card {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+  .user-card__role {
+    min-width: 0;
+  }
+  .admin-tabs .button {
+    flex: 1;
+  }
+}
